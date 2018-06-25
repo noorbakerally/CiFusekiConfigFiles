@@ -1,0 +1,29 @@
+@prefix :        <#> .
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+
+[] rdf:type fuseki:Server ;
+	fuseki:services ( <#service-bistro.d2.v.trig> <#service-bistro.v.ttl> ) . 
+
+<#service-bistro.d2.v.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'bistro.d2.v.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-bistro.d2.v.trig> ;
+.
+
+<#dataset-bistro.d2.v.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/bistro.d2.v.trig' ;
+.
+<#service-bistro.v.ttl> rdf:type fuseki:Service ;
+    fuseki:name                       'bistro.v.ttl' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-bistro.v.ttl> ;
+.
+
+<#dataset-bistro.v.ttl>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/bistro.v.ttl' ;
+.
+

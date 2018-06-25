@@ -1,0 +1,220 @@
+@prefix :        <#> .
+@prefix fuseki:  <http://jena.apache.org/fuseki#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+
+[] rdf:type fuseki:Server ;
+	fuseki:services ( <#service-sncf.d8.trig> <#service-grandpoitiers.d8.trig> <#service-datanova.d8.trig> <#service-ratp.d8.trig> <#service-bistrotdepays.d8.trig> <#service-sarthe.d8.trig> <#service-enedis.d8.trig> <#service-iledefrance.d8.trig> <#service-datainfolocale.d8.trig> <#service-rennesmetropole.d8.trig> <#service-tourism62.d8.trig> <#service-navitia.d8.trig> <#service-issy.d8.trig> <#service-haute-garonne.d8.trig> <#service-agen.d8.trig> <#service-paris.d8.trig> <#service-stif.d8.trig> <#service-toulouse.d8.trig> <#service-hauts-de-seine.d8.trig> <#service-angers.d8.trig> <#service-corsica.d8.trig>  ) .
+
+<#service-sncf.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'sncf.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-sncf.d8.trig> ;
+.
+
+<#dataset-sncf.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/sncf.d8.trig' ;
+.
+
+<#service-grandpoitiers.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'grandpoitiers.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-grandpoitiers.d8.trig> ;
+.
+
+<#dataset-grandpoitiers.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/grandpoitiers.d8.trig' ;
+.
+
+<#service-datanova.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'datanova.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-datanova.d8.trig> ;
+.
+
+<#dataset-datanova.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/datanova.d8.trig' ;
+.
+
+<#service-ratp.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'ratp.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-ratp.d8.trig> ;
+.
+
+<#dataset-ratp.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/ratp.d8.trig' ;
+.
+
+<#service-bistrotdepays.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'bistrotdepays.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-bistrotdepays.d8.trig> ;
+.
+
+<#dataset-bistrotdepays.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/bistrotdepays.d8.trig' ;
+.
+
+<#service-sarthe.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'sarthe.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-sarthe.d8.trig> ;
+.
+
+<#dataset-sarthe.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/sarthe.d8.trig' ;
+.
+
+<#service-enedis.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'enedis.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-enedis.d8.trig> ;
+.
+
+<#dataset-enedis.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/enedis.d8.trig' ;
+.
+
+<#service-iledefrance.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'iledefrance.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-iledefrance.d8.trig> ;
+.
+
+<#dataset-iledefrance.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/iledefrance.d8.trig' ;
+.
+
+<#service-datainfolocale.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'datainfolocale.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-datainfolocale.d8.trig> ;
+.
+
+<#dataset-datainfolocale.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/datainfolocale.d8.trig' ;
+.
+
+<#service-rennesmetropole.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'rennesmetropole.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-rennesmetropole.d8.trig> ;
+.
+
+<#dataset-rennesmetropole.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/rennesmetropole.d8.trig' ;
+.
+
+<#service-tourism62.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'tourism62.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-tourism62.d8.trig> ;
+.
+
+<#dataset-tourism62.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/tourism62.d8.trig' ;
+.
+
+<#service-navitia.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'navitia.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-navitia.d8.trig> ;
+.
+
+<#dataset-navitia.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/navitia.d8.trig' ;
+.
+
+<#service-issy.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'issy.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-issy.d8.trig> ;
+.
+
+<#dataset-issy.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/issy.d8.trig' ;
+.
+
+<#service-haute-garonne.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'haute-garonne.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-haute-garonne.d8.trig> ;
+.
+
+<#dataset-haute-garonne.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/haute-garonne.d8.trig' ;
+.
+
+<#service-agen.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'agen.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-agen.d8.trig> ;
+.
+
+<#dataset-agen.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/agen.d8.trig' ;
+.
+
+<#service-paris.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'paris.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-paris.d8.trig> ;
+.
+
+<#dataset-paris.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/paris.d8.trig' ;
+.
+
+<#service-stif.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'stif.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-stif.d8.trig> ;
+.
+
+<#dataset-stif.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/stif.d8.trig' ;
+.
+
+<#service-toulouse.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'toulouse.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-toulouse.d8.trig> ;
+.
+
+<#dataset-toulouse.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/toulouse.d8.trig' ;
+.
+
+<#service-hauts-de-seine.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'hauts-de-seine.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-hauts-de-seine.d8.trig> ;
+.
+
+<#dataset-hauts-de-seine.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/hauts-de-seine.d8.trig' ;
+.
+
+<#service-angers.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'angers.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-angers.d8.trig> ;
+.
+
+<#dataset-angers.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/angers.d8.trig' ;
+.
+
+<#service-corsica.d8.trig> rdf:type fuseki:Service ;
+    fuseki:name                       'corsica.d8.trig' ;
+    fuseki:serviceQuery               'sparql' ;
+    fuseki:dataset                   <#dataset-corsica.d8.trig> ;
+.
+
+<#dataset-corsica.d8.trig>    rdf:type  tdb:DatasetTDB;
+     tdb:location '/home/nbakeral/github/LDPDatasetFrontend/tdbs/corsica.d8.trig' ;
+.
+
